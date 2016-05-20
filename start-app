@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /home/ubuntu/workspace/movie_review
+rails s -b $IP -p $PORT
