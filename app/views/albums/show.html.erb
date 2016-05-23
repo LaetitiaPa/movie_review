@@ -1,29 +1,39 @@
-<%= image_tag @album.image.url(:medium) %>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">X
+      <div class="col-md-4">
+        <%= image_tag @album.image.url(:medium) %>
+        <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><strong>Name:</strong></td>
+                <td><%= @album.name %></td>
+              </tr>
+              <tr>
+                <td><strong>Artist:</strong></td>
+                <td><%= @album.artist %></td>
+              </tr>
+              <tr>
+                <td><strong>Description:</strong></td>
+                <td><%= @album.description %></td>
+              </tr>
+              <tr>
+                <td><strong>Album length:</strong></td>
+                <td><%= @album.album_length %></td>
+              </tr>
+              <tr>
+                <td><strong>Genre:</strong></td>
+                <td><%= @album.genre %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Artist:</strong>
-  <%= @album.artist %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @album.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @album.description %>
-</p>
-
-<p>
-  <strong>Album length:</strong>
-  <%= @album.album_length %>
-</p>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @album.genre %>
-</p>
 
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>

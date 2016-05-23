@@ -11,7 +11,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem "paperclip", "~> 5.0.0.beta1"
 gem 'rmagick', '~> 2.15', '>= 2.15.4'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'slim'
 
 group :development, :test do
   gem 'byebug'
