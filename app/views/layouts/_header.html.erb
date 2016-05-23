@@ -13,7 +13,7 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <% if user_signed_in? %>
-            <li><%= link_to "New Album", new_movie_path, class: "active" %></li>
+            <li><%= link_to "New Album", new_album_path, class: "active" %></li>
             <li><%= link_to "Account", edit_user_registration_path%></li>
           <% else %>
             <li><%= link_to "Sign Up", new_user_registration_path, class: "active" %></li>
